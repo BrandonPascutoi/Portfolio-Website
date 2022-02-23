@@ -8,7 +8,8 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
 }
 
 button,
@@ -34,4 +35,9 @@ button:active,
 .wrapper-for-each-form-section textarea,
 .submit-button {
     border: none;
+}
+
+.navBar {
+    background-color: #181a27;
+    height: 3.8rem;
 }
