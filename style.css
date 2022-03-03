@@ -19,7 +19,8 @@ button:hover {
     text-shadow: 0px 0px 0px transparent;
 }
 
-button {   
+button {
+    -webkit-tap-highlight-color: transparent;
     border: 0px solid transparent;
 }
 
@@ -40,4 +41,122 @@ button:active,
 .navBar {
     background-color: #181a27;
     height: 3.8rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #be50f4;
+    margin-left: 10%;
+    font-size: 1rem;
+}
+
+.hamburger-menu {
+    width: 7.5%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15%;
+}
+
+.top-line,
+.middle-line,
+.bottom-line {
+    position: relative;
+    background-color: #be50f4;
+    width: 100%;
+    height: 17.5%;
+}
+
+.middle-line {
+    opacity: 100%;
+}
+
+.top-line,
+.bottom-line {
+    transform: rotate(0deg);
+    top: 0%;
+}
+
+.drop-down-menu {
+    background-color: #181a27;
+    height: 16.25rem;
+    width: 100%;
+    position: fixed;
+    top: -12.45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.drop-down-menu ul {
+    position: absolute;
+    top: 16.25rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.drop-down-menu ul li {
+    height: 10%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-down-menu ul li .icon {
+    margin-right: 0.5rem;
+    height: 60%;
+}
+
+.drop-down-menu ul li p {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.drop-down-menu ul .source-code-button {
+    justify-content: center;
+}
+
+.drop-down-menu ul .source-code-button a {
+    height: 100%;
+    width: 70%;
+    background-color: #623686;
+    border: 0.05rem solid #8a57b3;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-down-menu ul .source-code-button button {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.drop-down-menu ul .source-code-button button img {
+    height: 50%;
+}
+
+.test {
+    height: 200vh;
+    width: 100%;
+    background-color: #be50f4;
 }
