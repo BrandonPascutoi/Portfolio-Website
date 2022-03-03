@@ -42,6 +42,6 @@ const hamburgerMenuAnimation = (topLine, middleLine, bottomLine) => {
     
 }
 
-HamburgerMenu.onclick = function() {
+HamburgerMenu.addEventListener('click', function() {
     hamburgerMenuAnimation(topLine, middleLine, bottomLine);
-}
+})
