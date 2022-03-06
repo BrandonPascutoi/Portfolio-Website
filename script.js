@@ -45,3 +45,6 @@ const hamburgerMenuAnimation = (topLine, middleLine, bottomLine) => {
 HamburgerMenu.addEventListener('click', function() {
     hamburgerMenuAnimation(topLine, middleLine, bottomLine);
 })
+
+let video = document.querySelector('.video');
+video.playbackRate = 0.3;
