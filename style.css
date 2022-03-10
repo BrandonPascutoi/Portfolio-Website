@@ -155,24 +155,10 @@ button:active,
     height: 50%;
 }
 
-.star-background {
-    position: fixed;
-    height: 100vh;
+.introduction {
+    position: relative;
+    top: 3.8rem;
+    height: 40rem;
     width: 100%;
-    background-color: #be50f4;
-}
-
-.star-background {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-}
-
-.background-overlay {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #2d1950;
-    z-index: 9;
-    opacity: 25%;
+    background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48))
 }
