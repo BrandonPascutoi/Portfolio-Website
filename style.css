@@ -157,7 +157,6 @@ button:active,
 
 .introduction {
     position: relative;
-    top: 3.8rem;
     height: 40rem;
     width: 100%;
     background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48))
