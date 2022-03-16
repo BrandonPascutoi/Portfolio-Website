@@ -5,6 +5,7 @@ html {
 
   .background-stars {
       position: fixed;
+      top: 3.8rem
   }
 
   #stars2 {
