@@ -161,3 +161,12 @@ button:active,
     width: 100%;
     background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48))
 }
+
+.gradient-overlay {
+    position: absolute;
+    height: 75%;
+    width: 225%;
+    transform: rotate(60deg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.075),rgba(150, 150, 150, 0));
+    z-index: 9;
+}
