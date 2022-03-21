@@ -45,3 +45,21 @@ const hamburgerMenuAnimation = (topLine, middleLine, bottomLine) => {
 HamburgerMenu.addEventListener('click', function() {
     hamburgerMenuAnimation(topLine, middleLine, bottomLine);
 })
+
+// Elements for tagline on introduction section of home page.
+
+let tagline = document.querySelector('.tagline');
+
+// Function that incrementally deletes letters from tagline and rebuilds it with different word(s)
+
+const incrementallyDeleteLastCharacterOfString = str => {
+    if (str.innerHTML.length > 0) {
+        setTimeout(function() {
+            str.innerHTML.slice(0, -1);
+        }, 1000)
+        console.log(str.innerHTML)
+        incrementallyDeleteLastCharacterOfString(str);
+    }
+}
+
+incrementallyDeleteLastCharacterOfString(tagline)
