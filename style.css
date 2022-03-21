@@ -159,7 +159,8 @@ button:active,
     position: relative;
     height: 40rem;
     width: 100%;
-    background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48))
+    background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48));
+    overflow: hidden;
 }
 
 .gradient-overlay {
@@ -168,5 +169,5 @@ button:active,
     width: 225%;
     transform: rotate(60deg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.075),rgba(150, 150, 150, 0));
-    z-index: 9;
+    z-index: 8;
 }
