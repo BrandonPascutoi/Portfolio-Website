@@ -159,15 +159,76 @@ button:active,
     position: relative;
     height: 40rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48));
     overflow: hidden;
 }
 
 .gradient-overlay {
     position: absolute;
-    height: 75%;
-    width: 225%;
+    height: 85%;
+    width: 235%;
     transform: rotate(60deg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.075),rgba(150, 150, 150, 0));
     z-index: 8;
+}
+
+.introduction-contents {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.introduction-contents span {
+    display: flex;
+    position: relative;
+    top: 9%;
+    width: 72.5%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.introduction-contents span p:first-child {
+    padding-right: 2.5%;
+}
+
+.introduction-contents span p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.introduction-contents h2 {
+    display: flex;
+    width: 72.5%;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduction-contents h2 p:first-child {
+    color: white;
+    font-weight: 500;
+}
+
+.introduction-contents h2 p:not(:first-child) {
+    color: #be50f4;
+    font-weight: 700;
+}
+
+.introduction-contents .tagline {
+    color: #be50f4;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.introduction-contents img {
+    height: 35%;
 }
