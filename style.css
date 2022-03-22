@@ -223,13 +223,18 @@ button:active,
     font-weight: 700;
 }
 
-.introduction-contents .tagline {
+.introduction-contents .tagline-container {
+    width: 72.5%;
+    height: 4%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.introduction-contents .tagline-container .tagline {
     color: #be50f4;
     font-size: 1.1rem;
     font-weight: 600;
-    align-self: flex-start;
-    position: relative;
-    left: 13.75%;
 }
 
 .introduction-contents img {

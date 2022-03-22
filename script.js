@@ -50,6 +50,8 @@ HamburgerMenu.addEventListener('click', function() {
 
 let tagline = document.querySelector('.tagline');
 let taglineContents = document.querySelector('.tagline').innerHTML;
+let secondTagline = 'Self-taught';
+let thirdTagline = 'Constant Learner';
 
 // Function that incrementally deletes letters from tagline and rebuilds it with different word(s)
 
@@ -61,7 +63,26 @@ const incrementallyDeleteLastCharacterOfString = str => {
             incrementallyDeleteLastCharacterOfString(sliced);
         }
     }, 0150)
-    
 }
 
-setInterval(incrementallyDeleteLastCharacterOfString(taglineContents), 1000)
+let fullWordBeforeDeletion = taglineContents;
+let wordsBeingBuilt = '';
+let currentLetterIndex = 0;
+
+const incrementallyAddNextCharacterOfString = (emptyStr, taglineReplacement) => {
+    setTimeout(()=> {
+        if (emptyStr.length < taglineReplacement.length) {
+            wordsBeingBuilt += taglineReplacement[currentLetterIndex];
+            tagline.innerHTML = wordsBeingBuilt;
+            currentLetterIndex++;
+            incrementallyAddNextCharacterOfString(wordsBeingBuilt, secondTagline)
+        }
+    }, 0150)
+}
+
+const entireTaglineAnimation = () => {
+    setTimeout(() =>  {incrementallyDeleteLastCharacterOfString(taglineContents)}, 3000);
+    setTimeout(() =>  {incrementallyAddNextCharacterOfString(wordsBeingBuilt, secondTagline)}, 5500)
+}
+
+entireTaglineAnimation();
