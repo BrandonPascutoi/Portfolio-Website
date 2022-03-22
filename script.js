@@ -48,18 +48,20 @@ HamburgerMenu.addEventListener('click', function() {
 
 // Elements for tagline on introduction section of home page.
 
-let taglineContents = document.querySelector('.tagline').innerHTML;
 let tagline = document.querySelector('.tagline');
+let taglineContents = document.querySelector('.tagline').innerHTML;
 
 // Function that incrementally deletes letters from tagline and rebuilds it with different word(s)
 
 const incrementallyDeleteLastCharacterOfString = str => {
-    setTimeout(function() {
-        for (let i = 0; str.length > 0; i++) {
-            tagline.innerHTML = str.slice(0, -1);
-            console.log(tagline.innerHTML)
+    setTimeout(() => {
+        if (str.length > 0) {
+            let sliced = str.slice(0, -1)
+            tagline.innerHTML = sliced;
+            incrementallyDeleteLastCharacterOfString(sliced);
         }
-    }, 2000) 
+    }, 0150)
+    
 }
 
-incrementallyDeleteLastCharacterOfString(taglineContents)
+setInterval(incrementallyDeleteLastCharacterOfString(taglineContents), 1000)

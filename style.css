@@ -227,6 +227,9 @@ button:active,
     color: #be50f4;
     font-size: 1.1rem;
     font-weight: 600;
+    align-self: flex-start;
+    position: relative;
+    left: 13.75%;
 }
 
 .introduction-contents img {
