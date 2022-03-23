@@ -54,6 +54,54 @@ let thirdTagline = 'Constant Learner';
 
 let taglineWeAreCurrentlyOn = 1;
 
+let incrementallyRemoveLastCharacter = () => {
+    let i = 0;
+    let loop = phrase => {
+        setTimeout(() => {
+            phrase.innerHTML = phrase.innerHTML.slice(0, -1);
+            if (i < phrase.innerHTML.length) {
+                loop(phrase);
+            } else {
+                incrementallyAddNextCharacter();
+            }
+        }, 0150)
+    }
+    loop(tagline); 
+}
+
+let incrementallyAddNextCharacter = () => {
+    let i = 0;
+    let loop = phrase => {
+        setTimeout(() => {
+            const rebuildPhrase = taglinePosition => {
+                phrase.innerHTML += taglinePosition[i];
+                if (i < taglinePosition.length - 1) {
+                    i++;
+                    loop(phrase);
+                } else {
+                    setTimeout(() => {
+                        taglineWeAreCurrentlyOn++
+                        if (taglineWeAreCurrentlyOn === 4) {
+                            taglineWeAreCurrentlyOn = 1;
+                        }
+                        incrementallyRemoveLastCharacter()
+                    }, 3000)
+                }
+            }
+            if (taglineWeAreCurrentlyOn === 1) {
+                rebuildPhrase(secondTagline)
+            } else if (taglineWeAreCurrentlyOn === 2) {
+                rebuildPhrase(thirdTagline)
+            } else if (taglineWeAreCurrentlyOn === 3) {
+                rebuildPhrase(firstTagline)
+            } else {
+                i = 1;
+            }
+        }, 0150);
+    }
+    loop(tagline);
+}
+
 let taglinePromise = new Promise((resolve, reject) => {
     if (tagline.innerHTML === firstTagline || tagline.innerHTML === secondTagline || tagline.innerHTML === ThirdTagline) {
         resolve('Passed!');
@@ -62,42 +110,10 @@ let taglinePromise = new Promise((resolve, reject) => {
     };
 });
 
-taglinePromise.then(value => {
-    (function() {
-        let i = 0;
-        let loop = phrase => {
-            setTimeout(() => {
-                phrase.innerHTML = phrase.innerHTML.slice(0, -1);
-                if (i < phrase.innerHTML.length) {
-                    loop(phrase);
-                }
-            }, 0150)
-        }
-        loop(tagline); 
-    })();
-}, rejection => {
-    (function() {
-        let i = 0;
-        let loop = phrase => {
-            setTimeout(() => {
-                const rebuildPhrase = taglinePosition => {
-                    phrase.innerHTML += taglinePosition[i];
-                    if (i < taglinePosition.length - 1) {
-                        i++;
-                        loop(phrase);
-                    }
-                }
-                if (taglineWeAreCurrentlyOn === 1) {
-                    rebuildPhrase(secondTagline)
-                } else if (taglineWeAreCurrentlyOn === 2) {
-                    rebuildPhrase(thirdTagline)
-                } else if (taglineWeAreCurrentlyOn === 3) {
-                    rebuildPhrase(firstTagline)
-                } else {
-                    i = 0;
-                }
-            }, 0150);
-        }
-        loop(tagline);
-    })();
+taglinePromise.then(deletingCharacters => {
+    setTimeout(() => {
+        incrementallyRemoveLastCharacter();
+    }, 2000)
+}, addingCharacters => {
+
 });
