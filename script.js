@@ -47,42 +47,57 @@ HamburgerMenu.addEventListener('click', function() {
 })
 
 // Elements for tagline on introduction section of home page.
-
 let tagline = document.querySelector('.tagline');
-let taglineContents = document.querySelector('.tagline').innerHTML;
-let secondTagline = 'Self-taught';
+let firstTagline = 'Front End Developer';
+let secondTagline = 'Self Taught';
 let thirdTagline = 'Constant Learner';
 
-// Function that incrementally deletes letters from tagline and rebuilds it with different word(s)
+let taglineWeAreCurrentlyOn = 1;
 
-const incrementallyDeleteLastCharacterOfString = str => {
-    setTimeout(() => {
-        if (str.length > 0) {
-            let sliced = str.slice(0, -1)
-            tagline.innerHTML = sliced;
-            incrementallyDeleteLastCharacterOfString(sliced);
+let taglinePromise = new Promise((resolve, reject) => {
+    if (tagline.innerHTML === firstTagline || tagline.innerHTML === secondTagline || tagline.innerHTML === ThirdTagline) {
+        resolve('Passed!');
+    } else if (tagline.innerHTML === '') {
+        reject('Line is empty');
+    };
+});
+
+taglinePromise.then(value => {
+    (function() {
+        let i = 0;
+        let loop = phrase => {
+            setTimeout(() => {
+                phrase.innerHTML = phrase.innerHTML.slice(0, -1);
+                if (i < phrase.innerHTML.length) {
+                    loop(phrase);
+                }
+            }, 0150)
         }
-    }, 0150)
-}
-
-let fullWordBeforeDeletion = taglineContents;
-let wordsBeingBuilt = '';
-let currentLetterIndex = 0;
-
-const incrementallyAddNextCharacterOfString = (emptyStr, taglineReplacement) => {
-    setTimeout(()=> {
-        if (emptyStr.length < taglineReplacement.length) {
-            wordsBeingBuilt += taglineReplacement[currentLetterIndex];
-            tagline.innerHTML = wordsBeingBuilt;
-            currentLetterIndex++;
-            incrementallyAddNextCharacterOfString(wordsBeingBuilt, secondTagline)
+        loop(tagline); 
+    })();
+}, rejection => {
+    (function() {
+        let i = 0;
+        let loop = phrase => {
+            setTimeout(() => {
+                const rebuildPhrase = taglinePosition => {
+                    phrase.innerHTML += taglinePosition[i];
+                    if (i < taglinePosition.length - 1) {
+                        i++;
+                        loop(phrase);
+                    }
+                }
+                if (taglineWeAreCurrentlyOn === 1) {
+                    rebuildPhrase(secondTagline)
+                } else if (taglineWeAreCurrentlyOn === 2) {
+                    rebuildPhrase(thirdTagline)
+                } else if (taglineWeAreCurrentlyOn === 3) {
+                    rebuildPhrase(firstTagline)
+                } else {
+                    i = 0;
+                }
+            }, 0150);
         }
-    }, 0150)
-}
-
-const entireTaglineAnimation = () => {
-    setTimeout(() =>  {incrementallyDeleteLastCharacterOfString(taglineContents)}, 3000);
-    setTimeout(() =>  {incrementallyAddNextCharacterOfString(wordsBeingBuilt, secondTagline)}, 5500)
-}
-
-entireTaglineAnimation();
+        loop(tagline);
+    })();
+});
