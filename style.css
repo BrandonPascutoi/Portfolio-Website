@@ -242,7 +242,7 @@ button:active,
 }
 
 .information-about-me {
-    height: 74rem;
+    height: 65rem;
     width: 100%;
     background-image: linear-gradient(rgba(26, 22, 48, 0.767),rgb(26, 22, 48));
     display: flex;
@@ -280,4 +280,26 @@ button:active,
 
 .information-about-me .information-about-me-contents img {
     height: 15%;
+}
+
+.information-about-me .information-about-me-contents .icons-container {
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information-about-me .information-about-me-contents .icons-container .icon-circle {
+    background-color: aliceblue;
+    height: 67px;
+    width: 67px;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-about-me .information-about-me-contents .icons-container .icon-circle img {
+    height: 50%;    
 }
