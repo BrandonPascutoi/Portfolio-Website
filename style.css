@@ -240,3 +240,44 @@ button:active,
 .introduction-contents img {
     height: 35%;
 }
+
+.information-about-me {
+    height: 74rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(26, 22, 48, 0.767),rgb(26, 22, 48));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-about-me .information-about-me-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 500;
+    height: 100%;
+    width: 90%;
+}
+
+.information-about-me .information-about-me-contents h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.information-about-me .information-about-me-contents h3 .introduce {
+    color: #be50f4;
+}
+
+.information-about-me .information-about-me-contents p span {
+    color: #be50f4;
+}
+
+.information-about-me .information-about-me-contents img {
+    height: 15%;
+}
