@@ -115,6 +115,7 @@ button:active,
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .drop-down-menu ul li .icon {
@@ -130,6 +131,7 @@ button:active,
 
 .drop-down-menu ul .source-code-button {
     justify-content: center;
+    cursor: pointer;
 }
 
 .drop-down-menu ul .source-code-button a {
@@ -141,6 +143,7 @@ button:active,
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .drop-down-menu ul .source-code-button button {
@@ -149,6 +152,7 @@ button:active,
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .drop-down-menu ul .source-code-button button img {
@@ -298,6 +302,7 @@ button:active,
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .information-about-me .information-about-me-contents .icons-container .icon-circle a {
