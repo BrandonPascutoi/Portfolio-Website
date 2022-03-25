@@ -118,6 +118,16 @@ button:active,
     cursor: pointer;
 }
 
+.drop-down-menu ul li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .drop-down-menu ul li .icon {
     margin-right: 0.5rem;
     height: 60%;
@@ -174,7 +184,7 @@ button:active,
 .gradient-overlay {
     position: absolute;
     height: 85%;
-    width: 235%;
+    width: 1035%;
     transform: rotate(60deg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.075),rgba(150, 150, 150, 0));
     z-index: 8;
@@ -245,6 +255,47 @@ button:active,
     height: 35%;
 }
 
+.about-me {
+    position: relative;
+    height: 141rem;
+    width: 100%;
+    background: linear-gradient(to bottom left,hsla(0,3%,6%,.582),rgba(12,8,24,.904));
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
+    color: white;
+}
+
+.about-me .about-me-text h1 {
+    text-align: center;
+    font-size: 2.15rem;
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me .about-me-text .about-me-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-me .about-me-text span p {
+    font-size: 1rem;
+    text-align: center;
+}
+
 .information-about-me {
     height: 65rem;
     width: 100%;
@@ -278,7 +329,7 @@ button:active,
     color: #be50f4;
 }
 
-.information-about-me .information-about-me-contents p span {
+.different-color {
     color: #be50f4;
 }
 
