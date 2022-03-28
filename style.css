@@ -265,6 +265,7 @@ button:active,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 8;
 }
 
 .about-me .about-me-text {
@@ -339,6 +340,21 @@ button:active,
     margin: 2.5%;
     border-radius: 0.4rem;
     box-shadow: 4px 5px 4px 3px rgba(89,4,168,.137)
+}
+
+.about-me h3 {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.about-me .contribution-graph {
+    height : 2%;
 }
 
 .information-about-me {
