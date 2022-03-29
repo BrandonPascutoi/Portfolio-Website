@@ -531,10 +531,34 @@ button:active,
     height: 50%;    
 }
 
+/* iPhone 12 Pro and Pixel 5 */
+
 @media only screen 
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) { 
+    and (min-device-width: 390px) 
+    and (min-device-height: 844px) { 
+    
+    .introduction .introduction-contents h2 p:nth-child(2) {
+        position: relative;
+        right: 5%;
+    }
+}
+
+/* Samsung Galaxy S20 Ultra */
+
+@media only screen 
+    and (device-width : 412px) 
+    and (device-height : 915px) {
+    .introduction .introduction-contents h2 p:nth-child(2) {
+        position: relative;
+        right: 10%;
+    }
+}
+
+/* iPhone XR */
+
+@media only screen 
+    and (min-device-width : 414px) 
+    and (min-device-height : 896px) { 
 
     .introduction .introduction-contents h2 p:nth-child(2) {
         position: relative;
