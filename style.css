@@ -12,6 +12,8 @@ html {
     font-size: 20px;
 }
 
+/* all devices */
+
 button,
 button:hover {
     background: transparent;
@@ -527,4 +529,23 @@ button:active,
 
 .icons-container .icon-circle a img {
     height: 50%;    
+}
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+
+    .introduction .introduction-contents h2 p:nth-child(2) {
+        position: relative;
+        right: 10%;
+    }
+
+    .about-me .about-me-text h1 {
+        justify-content: space-around;
+    }
+
+    .about-me .contribution-graph {
+        height: 3.5%;
+    }
 }
