@@ -531,11 +531,32 @@ button:active,
     height: 50%;    
 }
 
+@media only screen
+    and (orientation: landscape) {
+
+    .hamburger-menu {
+        width: 5%;
+    }
+
+    .drop-down-menu {
+        height: 15rem;
+    }
+    
+    .gradient-overlay {
+        height: 120%;
+    }
+
+    .information-about-me .information-about-me-contents p:nth-child(4) {
+        width: 100%;
+    }
+}
+
 /* iPhone 12 Pro and Pixel 5 */
 
 @media only screen 
     and (min-device-width: 390px) 
-    and (min-device-height: 844px) { 
+    and (min-device-height: 844px)
+    and (orientation: portrait) { 
     
     .introduction .introduction-contents h2 p:nth-child(2) {
         position: relative;
@@ -547,7 +568,9 @@ button:active,
 
 @media only screen 
     and (device-width : 412px) 
-    and (device-height : 915px) {
+    and (device-height : 915px)
+    and (orientation: portrait) {
+    
     .introduction .introduction-contents h2 p:nth-child(2) {
         position: relative;
         right: 10%;
@@ -558,7 +581,8 @@ button:active,
 
 @media only screen 
     and (min-device-width : 414px) 
-    and (min-device-height : 896px) { 
+    and (min-device-height : 896px)
+    and (orientation: portrait) { 
 
     .introduction .introduction-contents h2 p:nth-child(2) {
         position: relative;
