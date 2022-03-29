@@ -549,6 +549,27 @@ button:active,
     .information-about-me .information-about-me-contents p:nth-child(4) {
         width: 100%;
     }
+
+    .about-me .about-me-text h1 {
+        width: 37.5%;
+    }
+
+    .about-me .technology-icons .icon-row .icon {
+        width: 20%;
+    }
+
+    .about-me .contribution-graph {
+        height: 5%;
+    }
+
+    .about-me .less-or-more-container .nodes-container .node {
+        height: 80%;
+    }
+
+    .about-me .icons-container {
+        position: relative;
+        top: 2%;
+    }
 }
 
 /* iPhone 12 Pro and Pixel 5 */
