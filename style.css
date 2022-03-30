@@ -585,6 +585,50 @@ button:active,
     }
 }
 
+@media only screen 
+    and (min-device-width: 844px) 
+    and (min-device-height: 390px)
+    and (orientation: landscape) {
+
+        .hamburger-menu {
+            width: 4%;
+        }
+
+        .drop-down-menu {
+            height: 15.85rem;
+        }
+
+        .gradient-overlay {
+            bottom: 5%
+        }
+
+        .introduction .introduction-contents h2 {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        .introduction .introduction-contents h2 p:not(:last-child) {
+            margin-right: 2.5%;
+        }
+
+        .about-me .about-me-text h1 {
+            width: 30%;
+        }
+
+        .about-me .contribution-graph {
+            height: 6.5%;
+        }
+
+        .about-me .less-or-more-container .nodes-container .node {
+            height: 100%;
+            top: 0%;
+        }
+
+        .about-me .technology-icons .icon-row .icon {
+            width: 17.5%;
+        }
+    }
+
 /* Samsung Galaxy S20 Ultra */
 
 @media only screen 
