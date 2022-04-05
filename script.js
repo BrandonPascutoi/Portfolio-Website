@@ -110,10 +110,37 @@ let taglinePromise = new Promise((resolve, reject) => {
     };
 });
 
-taglinePromise.then(deletingCharacters => {
+taglinePromise.then(() => {
     setTimeout(() => {
         incrementallyRemoveLastCharacter();
     }, 2000)
-}, addingCharacters => {
+}, () => {
 
 });
+
+const landscapeNavBar = document.querySelector('.landscape-navBar')
+
+function getYPosition(){
+    const top  = window.pageYOffset || document.documentElement.scrollTop
+    return top;
+}
+
+const makeLandscapeNavbarTransparent = () => {
+    landscapeNavBar.style.transition = 'all 0.1s linear';
+    landscapeNavBar.style.backgroundColor = 'transparent'
+    landscapeNavBar.style.boxShadow = '0 0 0 0 rgb(9 5 29 / 17%)'
+}
+
+(() => {
+    setInterval(() => {
+        if (getYPosition() > 0) {
+            landscapeNavBar.style.transition = 'all 0.1s ease-in-out';
+            landscapeNavBar.style.backgroundColor = '#1b1a2ea9'
+            landscapeNavBar.style.boxShadow = '0 10px 10px 0 rgb(9 5 29 / 17%)'
+        } else {
+            landscapeNavBar.style.transition = 'all 0.1s ease-in-out';
+            landscapeNavBar.style.backgroundColor = 'transparent'
+            landscapeNavBar.style.boxShadow = '0 0 0 0 rgb(9 5 29 / 17%)'
+        }
+    }, 0050)
+})();
