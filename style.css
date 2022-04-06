@@ -201,7 +201,16 @@ button:active,
     justify-content: space-evenly;
 }
 
-.introduction-contents span {
+.introduction-contents .landscape-content-container {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.introduction-contents .landscape-content-container span {
     display: flex;
     position: relative;
     top: 9%;
@@ -210,17 +219,17 @@ button:active,
     margin-bottom: 5%;
 }
 
-.introduction-contents span p:first-child {
+.introduction-contents .landscape-content-container span p:first-child {
     padding-right: 2.5%;
 }
 
-.introduction-contents span p {
+.introduction-contents .landscape-content-container span p {
     font-size: 2rem;
     font-weight: 500;
     color: white;
 }
 
-.introduction-contents h2 {
+.introduction-contents .landscape-content-container h2 {
     display: flex;
     width: 72.5%;
     font-size: 2rem;
@@ -229,17 +238,17 @@ button:active,
     justify-content: space-between;
 }
 
-.introduction-contents h2 p:first-child {
+.introduction-contents .landscape-content-container h2 p:first-child {
     color: white;
     font-weight: 500;
 }
 
-.introduction-contents h2 p:not(:first-child) {
+.introduction-contents .landscape-content-container h2 p:not(:first-child) {
     color: #be50f4;
     font-weight: 700;
 }
 
-.introduction-contents .tagline-container {
+.introduction-contents .landscape-content-container .tagline-container {
     width: 72.5%;
     height: 4%;
     display: flex;
@@ -247,7 +256,7 @@ button:active,
     align-items: center;
 }
 
-.introduction-contents .tagline-container .tagline {
+.introduction-contents .landscape-content-container .tagline-container .tagline {
     color: #be50f4;
     font-size: 1.1rem;
     font-weight: 600;
@@ -531,19 +540,19 @@ button:active,
     height: 50%;    
 }
 
+@media only screen 
+    and (orientation: portrait) {
+
+        .landscape-navBar {
+            display: none;
+        }
+    }
+
 @media only screen
     and (orientation: landscape) {
-
-    .hamburger-menu {
-        width: 5%;
-    }
-
-    .drop-down-menu {
-        height: 15rem;
-    }
     
     .gradient-overlay {
-        height: 120%;
+        height: 200%;
     }
 
     .information-about-me .information-about-me-contents p:nth-child(4) {
@@ -570,6 +579,114 @@ button:active,
         position: relative;
         top: 2%;
     }
+
+    a {
+        text-decoration: none;
+    }
+
+    .navBar,
+    .drop-down-menu {
+        display: none;
+    }
+
+    .landscape-navBar {
+        position: fixed;
+        height: 4.8rem;
+        width: 100%;
+        background-color: transparent;
+        z-index: 10;
+        box-shadow: 0 0px 0px 0 rgba(9,5,29,.171)
+    }
+
+    .blur {
+        height: 100%;
+        width: 99.9%;
+        backdrop-filter: blur(15px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-contents {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-contents li {
+        height: 100%;
+        width: 10%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-contents li:first-child .different-color {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-contents li .icon-container {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    .menu-contents li:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .menu-contents li:last-child .icon-container {
+        background-color: #623686;
+        height: 65%;
+        width: 75%;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .icon {
+        height: 40%;
+    }
+
+    .icon-container p {
+        color: white;
+        font-weight: 500;
+    }
+
+    .source-button-icon {
+        height: 25%
+    }
+
+    .introduction {
+        height: 22.5rem;
+    }
+
+    .introduction-contents {
+        flex-direction: row;
+    }
+
+    .introduction-contents .landscape-content-container {
+        width: 55%;
+    }
+
+    .introduction-contents img {
+        height: 50%;
+    }
 }
 
 /* iPhone 12 Pro and Pixel 5 */
@@ -593,98 +710,6 @@ button:active,
     and (min-device-width: 844px) 
     and (min-device-height: 390px)
     and (orientation: landscape) {
-
-        a {
-            text-decoration: none;
-        }
-
-        .navBar,
-        .drop-down-menu {
-            display: none;
-        }
-
-        .landscape-navBar {
-            position: fixed;
-            height: 4.8rem;
-            width: 100%;
-            background-color: transparent;
-            z-index: 10;
-            box-shadow: 0 0px 0px 0 rgba(9,5,29,.171)
-        }
-
-        .blur {
-            height: 100%;
-            width: 99.9%;
-            backdrop-filter: blur(15px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .menu-contents {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-
-        .menu-contents li {
-            height: 100%;
-            width: 10%;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .menu-contents li:first-child .different-color {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .menu-contents li .icon-container {
-            height: 50%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 0.9rem;
-        }
-
-        .menu-contents li:last-child {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .menu-contents li:last-child .icon-container {
-            background-color: #623686;
-            height: 65%;
-            width: 75%;
-            border-radius: 0.25rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-
-        .icon {
-            height: 40%;
-        }
-
-        .source-button-icon {
-            height: 25%
-        }
-
-        .icon-container p {
-            color: white;
-            font-weight: 500;
-        }
 
         .hamburger-menu {
             width: 4%;
