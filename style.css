@@ -601,6 +601,7 @@ button:active,
     .blur {
         height: 100%;
         width: 99.9%;
+        -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         display: flex;
         align-items: center;
