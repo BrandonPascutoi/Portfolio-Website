@@ -578,7 +578,6 @@ button:active,
     }
 
     .about-me {
-        position: relative;
         top: 0rem;
         padding-top: 5rem;
     }
@@ -732,6 +731,12 @@ button:active,
     .information-about-me .information-about-me-contents .text-and-image-container img {
         height: auto;
         width: 30%;
+    }
+
+    .cv-section {
+        height: 50rem;
+        top: 0rem;
+        padding-top: 5rem;
     }
 }
 
