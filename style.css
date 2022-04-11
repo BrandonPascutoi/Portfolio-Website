@@ -577,6 +577,12 @@ button:active,
         width: 100%;
     }
 
+    .about-me {
+        position: relative;
+        top: 0rem;
+        padding-top: 5rem;
+    }
+
     .about-me .about-me-text h1 {
         width: 37.5%;
     }
