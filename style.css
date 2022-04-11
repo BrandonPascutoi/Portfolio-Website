@@ -476,6 +476,7 @@ button:active,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .information-about-me .information-about-me-contents {
@@ -483,13 +484,30 @@ button:active,
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    color: white;
-    font-weight: 500;
     height: 100%;
     width: 90%;
 }
 
-.information-about-me .information-about-me-contents h3 {
+.information-about-me .information-about-me-contents .text-and-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information-about-me .information-about-me-contents .text-and-image-container .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    height: 75%;
+    width: 100%;
+}
+
+.information-about-me .information-about-me-contents .text-and-image-container .text-container h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,7 +515,7 @@ button:active,
     font-size: 2rem;
 }
 
-.information-about-me .information-about-me-contents h3 .introduce {
+.information-about-me .information-about-me-contents .text-and-image-container .text-container h3 .introduce {
     color: #be50f4;
 }
 
@@ -505,8 +523,8 @@ button:active,
     color: #be50f4;
 }
 
-.information-about-me .information-about-me-contents img {
-    height: 15%;
+.information-about-me .information-about-me-contents .text-and-image-container img {
+    height: 20%;
 }
 
 .information-about-me .information-about-me-contents .icons-container {
@@ -595,6 +613,7 @@ button:active,
         width: 100%;
         background-color: transparent;
         z-index: 10;
+        -webkit-box-shadow: 0 0px 0px 0 rgba(9,5,29,.171);
         box-shadow: 0 0px 0px 0 rgba(9,5,29,.171)
     }
 
@@ -687,6 +706,26 @@ button:active,
 
     .introduction-contents img {
         height: 50%;
+    }
+
+    .information-about-me {
+        height: 45rem;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container {
+        flex-direction: row;
+        height: 70%;
+        align-items: flex-start;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container .text-container {
+        width: 65%;
+        height: 100%;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container img {
+        height: auto;
+        width: 30%;
     }
 }
 
