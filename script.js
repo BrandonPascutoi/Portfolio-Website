@@ -144,3 +144,25 @@ const makeLandscapeNavbarTransparent = () => {
         }
     }, 0050)
 })();
+
+// Elements related to nav bar properties:
+const menuOptionContainer = document.querySelectorAll('.icon-container');
+const barUnderMenuOptions = document.querySelectorAll('.bar')
+
+// This determines what page the website is currently on.
+const path = window.location.pathname;
+const page = path.split("/").pop();
+
+// This makes purple bar appear under element depending on which page is selected.
+window.addEventListener('load', () => {
+    if (page == 'index.html') {
+        barUnderMenuOptions[0].style.transition = 'all 0.2s ease-in-out';
+        barUnderMenuOptions[0].style.width = '90%';
+    } else if (page == 'about.html') {
+        barUnderMenuOptions[1].style.transition = 'all 0.2s ease-in-out';
+        barUnderMenuOptions[1].style.width = '90%';
+    } else if (page == 'cv.html') {
+        barUnderMenuOptions[3].style.transition = 'all 0.2s ease-in-out';
+        barUnderMenuOptions[3].style.width = '90%';
+    } 
+})
