@@ -153,6 +153,15 @@ const barUnderMenuOptions = document.querySelectorAll('.bar')
 const path = window.location.pathname;
 const page = path.split("/").pop();
 
+for (let i = 0; i < menuOptionContainer.length; i++) {
+    menuOptionContainer[i].addEventListener('click', () => {
+        for (let j = 0; j < menuOptionContainer.length; j++) {
+            barUnderMenuOptions[j].style.transition = 'all 0.2s ease-in-out';
+            barUnderMenuOptions[j].style.width = '0%';
+        }
+    })
+}
+
 // This makes purple bar appear under element depending on which page is selected.
 window.addEventListener('load', () => {
     if (page == 'index.html') {
