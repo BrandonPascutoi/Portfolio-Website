@@ -133,7 +133,7 @@ const makeLandscapeNavbarTransparent = () => {
 
 (() => {
     setInterval(() => {
-        if (getYPosition() > 0) {
+        if (getYPosition() > 20) {
             landscapeNavBar.style.transition = 'all 0.1s ease-in-out';
             landscapeNavBar.style.backgroundColor = '#1b1a2ea9'
             landscapeNavBar.style.boxShadow = '0 10px 10px 0 rgb(9 5 29 / 17%)'
