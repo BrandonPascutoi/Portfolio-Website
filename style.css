@@ -519,10 +519,6 @@ button:active,
     font-size: 2rem;
 }
 
-.information-about-me .information-about-me-contents .text-and-image-container .text-container h3 .introduce {
-    color: #be50f4;
-}
-
 .different-color {
     color: #be50f4;
 }
@@ -1018,5 +1014,40 @@ button:active,
 
     .introduction-contents img {
         height: 50%;
+    }
+
+    .information-about-me .information-about-me-contents .icons-container {
+        width: 30%;
+    }
+
+    .information-about-me {
+        height: 45rem;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container {
+        flex-direction: row;
+        height: 70%;
+        align-items: flex-start;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container .text-container {
+        width: 65%;
+        height: 100%;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container .text-container h3 {
+        width: 100%;
+    }
+
+    .information-about-me .information-about-me-contents p {
+       font-size: 1.2rem; 
+       font-weight: normal;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container img {
+        height: auto;
+        width: 30%;
+        position: relative;
+        top: 10%;
     }
 }
