@@ -216,7 +216,6 @@ button:active,
 
 .introduction-contents .landscape-content-container span:not(.different-color) {
     display: flex;
-    position: relative;
     width: 72.5%;
     align-items: center;
 }
