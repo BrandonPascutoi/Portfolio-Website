@@ -216,14 +216,19 @@ button:active,
 
 .introduction-contents .landscape-content-container span:not(.different-color) {
     display: flex;
+    height: 30%;
     width: 72.5%;
     align-items: center;
 }
 
 .introduction-contents .landscape-content-container span p:first-child {
     display: flex;
-    width: 35%;
-    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.introduction-contents .landscape-content-container span p:last-child {
+    position: relative;
+    left: 10px;
 }
 
 .introduction-contents .landscape-content-container span p {
