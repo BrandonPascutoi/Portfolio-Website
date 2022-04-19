@@ -221,7 +221,7 @@ button:active,
 }
 
 .introduction-contents .landscape-content-container span p:first-child {
-    padding-right: 2.5%;
+    margin-right: 2.5%;
 }
 
 .introduction-contents .landscape-content-container span p {
