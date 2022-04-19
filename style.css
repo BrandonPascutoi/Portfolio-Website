@@ -1096,3 +1096,54 @@ button:active,
         font-size: 1.5rem;
     }
 }
+
+@media only screen
+    and (min-device-width: 1024px)
+    and (min-device-height : 768px)
+    and (orientation: landscape) {
+
+    .about-me {
+        height: 110rem;
+    }
+
+    .about-me .about-me-text h1 {
+        font-size: 3rem;
+        width: 35%;
+    }
+
+    .about-me .about-me-text .about-me-text-block p {
+        font-size: 1.25rem;
+    }
+
+    .about-me img {
+        height: 15%;
+    }
+
+    .about-me h2,
+    .about-me h3 {
+        font-size: 3rem;
+    }
+
+    .about-me .contribution-graph {
+        height: 7%;
+    }
+
+    .about-me .less-or-more-container {
+        bottom: 5%;
+        height: 1.8rem;
+    }
+}
+
+@media only screen
+    and (min-device-width: 1180px)
+    and (min-device-height : 820px)
+    and (orientation: landscape) {
+
+    .about-me .about-me-text h1 {
+        width: 30%;
+    }
+
+    .about-me .less-or-more-container {
+        height: 2rem;
+    }
+}
