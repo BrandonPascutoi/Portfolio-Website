@@ -221,7 +221,9 @@ button:active,
 }
 
 .introduction-contents .landscape-content-container span p:first-child {
-    margin-right: 2.5%;
+    display: flex;
+    width: 35%;
+    flex-wrap: nowrap;
 }
 
 .introduction-contents .landscape-content-container span p {
