@@ -1050,4 +1050,45 @@ button:active,
         position: relative;
         top: 10%;
     }
+
+    .about-me {
+        height: 140rem;
+    }
+
+    .about-me .about-me-text h1 {
+        width: 60%;
+        font-size: 4rem;
+    }
+
+    .about-me .about-me-text .about-me-text-block p {
+        font-size: 1.5rem;
+    }
+
+    .about-me img {
+        height: 12.5%;
+    }
+
+    .about-me h2,
+    .about-me h3 {
+        font-size: 4rem;
+    }
+
+    .about-me .contribution-graph {
+        height: 4.5%;
+    }
+
+    .about-me .less-or-more-container {
+        height: 2%;
+        bottom: 7%;
+    }
+
+    .about-me .icons-container {
+        position: relative;
+        top: 1%;
+    }
+
+    .about-me .icons-container .icon-circle {
+        height: 100px;
+        width: 100px;
+    }
 }
