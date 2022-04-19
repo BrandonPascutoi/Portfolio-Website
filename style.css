@@ -1053,6 +1053,12 @@ button:active,
 
     .about-me {
         height: 140rem;
+        top: 0;
+    }
+
+    .about-me .about-me-text {
+        position: relative;
+        top: 3rem;
     }
 
     .about-me .about-me-text h1 {
@@ -1090,5 +1096,13 @@ button:active,
     .about-me .icons-container .icon-circle {
         height: 100px;
         width: 100px;
+    }
+
+    .cv-section {
+        height: 55rem;
+    }
+
+    .cv-section .download-button p {
+        font-size: 1.5rem;
     }
 }
