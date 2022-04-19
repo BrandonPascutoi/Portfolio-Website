@@ -705,7 +705,6 @@ button:active,
         align-items: flex-start;
     }
 
-
     .introduction-contents .landscape-content-container span:not(.different-color) {
         width: 100%;
     }
@@ -854,7 +853,7 @@ button:active,
     }
 }
 
-/* iPad Air */
+/* iPad Mini + iPad Air */
 
 @media only screen
     and (min-device-width: 768px)
@@ -978,11 +977,14 @@ button:active,
 
     .introduction-contents .landscape-content-container {
         justify-content: space-between;
-        width: 42.5%;
-        height: 45%;
+        width: 40%;
+        align-items: flex-start;
     }
 
-    .introduction-contents .landscape-content-container span,
+    .introduction-contents .landscape-content-container span:not(.different-color) {
+        width: 100%;
+    }
+    
     .introduction-contents .landscape-content-container h2,
     .introduction-contents .landscape-content-container .tagline-container {
         width: 100%;
