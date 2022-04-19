@@ -873,8 +873,8 @@ button:active,
 /* iPad Air */
 
 @media only screen
-    and (min-device-width: 820px)
-    and (min-device-height : 1180px)
+    and (min-device-width: 768px)
+    and (min-device-height : 1024px)
     and (orientation: portrait) {
 
     .navBar,
@@ -1021,7 +1021,7 @@ button:active,
     }
 
     .information-about-me {
-        height: 45rem;
+        height: 50rem;
     }
 
     .information-about-me .information-about-me-contents .text-and-image-container {
@@ -1031,7 +1031,7 @@ button:active,
     }
 
     .information-about-me .information-about-me-contents .text-and-image-container .text-container {
-        width: 65%;
+        width: 60%;
         height: 100%;
     }
 
@@ -1046,7 +1046,7 @@ button:active,
 
     .information-about-me .information-about-me-contents .text-and-image-container img {
         height: auto;
-        width: 30%;
+        width: 35%;
         position: relative;
         top: 10%;
     }
@@ -1080,7 +1080,7 @@ button:active,
     }
 
     .about-me .contribution-graph {
-        height: 4.5%;
+        height: 4%;
     }
 
     .about-me .less-or-more-container {
