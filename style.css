@@ -289,12 +289,7 @@ button:active,
 }
 
 .about-me .about-me-text h1 {
-    text-align: center;
     font-size: 2.15rem;
-    display: flex;
-    width: 65%;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about-me .about-me-text .about-me-text-block {
@@ -577,10 +572,6 @@ button:active,
         padding-top: 5rem;
     }
 
-    .about-me .about-me-text h1 {
-        width: 37.5%;
-    }
-
     .about-me .technology-icons .icon-row .icon {
         width: 20%;
     }
@@ -805,10 +796,6 @@ button:active,
             margin-right: 2.5%;
         }
 
-        .about-me .about-me-text h1 {
-            width: 30%;
-        }
-
         .about-me .contribution-graph {
             height: 6.5%;
         }
@@ -846,10 +833,6 @@ button:active,
     .introduction .introduction-contents h2 p:nth-child(2) {
         position: relative;
         right: 10%;
-    }
-
-    .about-me .about-me-text h1 {
-        justify-content: space-around;
     }
 
     .about-me .contribution-graph {
@@ -1052,7 +1035,6 @@ button:active,
     }
 
     .about-me .about-me-text h1 {
-        width: 60%;
         font-size: 4rem;
     }
 
@@ -1108,7 +1090,6 @@ button:active,
 
     .about-me .about-me-text h1 {
         font-size: 3rem;
-        width: 35%;
     }
 
     .about-me .about-me-text .about-me-text-block p {
@@ -1138,10 +1119,6 @@ button:active,
     and (min-device-width: 1180px)
     and (min-device-height : 820px)
     and (orientation: landscape) {
-
-    .about-me .about-me-text h1 {
-        width: 30%;
-    }
 
     .about-me .less-or-more-container {
         height: 2rem;
