@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+*:not(.background-stars) {
+    z-index: 1;
+}
+
 html {
     scroll-behavior: smooth;
     font-family: "Raleway", sans-serif;
@@ -1122,5 +1126,97 @@ button:active,
 
     .about-me .less-or-more-container {
         height: 2rem;
+    }
+}
+
+@media screen 
+    and (min-device-width: 1200px) {
+
+    .landscape-navBar {
+        height: 12.5vh;
+    }
+
+    .landscape-navBar .blur .menu-contents li h1 {
+        font-size: 6vh;
+    }
+
+    .landscape-navBar .blur .menu-contents li .icon-container {
+        height: 100%;
+        justify-content: center;
+        width: 65%;
+        font-size: 2.5vh;
+    }
+
+    .landscape-navBar .blur .menu-contents li .icon-container .icon {
+        height: 35%;
+    }
+
+    .landscape-navBar .blur .menu-contents li .icon-container .bar {
+        height: 7.5%;
+    }
+
+    .landscape-navBar .blur .menu-contents li:last-child .icon-container {
+        height: 50%;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .landscape-navBar .blur .menu-contents li:last-child .icon-container .source-button-icon {
+        height: 40%;
+    }
+
+    .introduction {
+        height: 100vh;
+    }
+
+    .introduction .introduction-contents .landscape-content-container span p,
+    .introduction .introduction-contents .landscape-content-container h2,
+    .introduction .introduction-contents .landscape-content-container .tagline-container .tagline {
+        font-size: 7vh;
+    }
+
+    .introduction .introduction-contents .landscape-content-container span,
+    .introduction .introduction-contents .landscape-content-container h2,
+    .introduction .introduction-contents .landscape-content-container .tagline-container {
+        height: 30%;
+    }
+
+    .information-about-me {
+        height: 100vh;
+        font-size: 3.5vh;
+        background-image: linear-gradient(rgba(17, 16, 16, 0.61),rgb(26, 22, 48));
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container {
+        height: 60%;
+        width: 90%;
+        align-items: center;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container .text-container {
+        width: 60%;
+        font-size: 3vh;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container .text-container h3 {
+        font-size: 6vh;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        font-weight: 500;
+    }
+
+    .information-about-me .information-about-me-contents .text-and-image-container img {
+        width: 30%;
+    }
+
+    .information-about-me .information-about-me-contents .connect-with-me {
+        font-size: 7.5vh;
+    }
+
+    .information-about-me .information-about-me-contents .icons-container .icon-circle {
+        height: 10vh;
+        width: 10vh;
     }
 }
