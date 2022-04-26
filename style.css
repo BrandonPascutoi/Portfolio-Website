@@ -7,7 +7,7 @@
 }
 
 *:not(.background-stars) {
-    z-index: 1;
+    z-index: 6;
 }
 
 html {
@@ -197,7 +197,7 @@ button:active,
     width: 1035%;
     transform: rotate(60deg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.075),rgba(150, 150, 150, 0));
-    z-index: 8;
+    z-index: 5;
 }
 
 .introduction-contents {
@@ -1218,5 +1218,39 @@ button:active,
     .information-about-me .information-about-me-contents .icons-container .icon-circle {
         height: 10vh;
         width: 10vh;
+    }
+
+    .about-me {
+        height: 325vh;
+    }
+
+    .about-me .about-me-text h1,
+    .about-me h2,
+    .about-me h3 {
+        font-size: 10vh;
+    }
+
+    .about-me .about-me-text .about-me-text-block p {
+        font-size: 3.5vh;
+    }
+
+    .about-me .contribution-graph {
+        height: 9%;
+        
+    }
+
+    .about-me .less-or-more-container {
+        height: 2.25%;
+        bottom: 6%;
+        font-size: 3.5vh;
+    }
+
+    .about-me .less-or-more-container .nodes-container .node {
+        border-radius: 1vh;
+    }
+
+    .about-me .icons-container .icon-circle {
+        height: 12.5vh;
+        width: 12.5vh;
     }
 }
