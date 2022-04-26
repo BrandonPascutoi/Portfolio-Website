@@ -1230,13 +1230,33 @@ button:active,
         font-size: 10vh;
     }
 
+    .about-me h3 {
+        position: relative;
+        top: -0.5%;
+    }
+
+    .about-me .about-me-text {
+        height: 12.5%;
+        justify-content: space-between;
+    }
+
+    .about-me-text-block br {
+        display: none;
+    }
+
+    .about-me .about-me-text .about-me-text-block {
+        height: 70%;
+        justify-content: space-between;
+    }
+
     .about-me .about-me-text .about-me-text-block p {
         font-size: 3.5vh;
     }
 
     .about-me .contribution-graph {
         height: 9%;
-        
+        position: relative;
+        bottom: 1%;
     }
 
     .about-me .less-or-more-container {
