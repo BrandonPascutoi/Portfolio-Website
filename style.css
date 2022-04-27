@@ -1160,6 +1160,7 @@ button:active,
         width: 50%;
         flex-direction: row;
         justify-content: space-evenly;
+        border-radius: 0.5vh;
     }
 
     .landscape-navBar .blur .menu-contents li:last-child .icon-container .source-button-icon {
@@ -1180,6 +1181,10 @@ button:active,
     .introduction .introduction-contents .landscape-content-container h2,
     .introduction .introduction-contents .landscape-content-container .tagline-container {
         height: 30%;
+    }
+
+    .introduction-contents .landscape-content-container span p:last-child {
+        left: 2.5%;
     }
 
     .information-about-me {
@@ -1222,6 +1227,7 @@ button:active,
 
     .about-me {
         height: 325vh;
+        padding-top: 7.5vh;
     }
 
     .about-me .about-me-text h1,
@@ -1236,21 +1242,27 @@ button:active,
     }
 
     .about-me .about-me-text {
-        height: 12.5%;
+        height: 15%;
         justify-content: space-between;
     }
 
-    .about-me-text-block br {
+    .about-me-text br {
         display: none;
     }
 
     .about-me .about-me-text .about-me-text-block {
-        height: 70%;
+        height: 60%;
         justify-content: space-between;
     }
 
     .about-me .about-me-text .about-me-text-block p {
         font-size: 3.5vh;
+    }
+
+    .about-me .technology-icons .icon-row .icon {
+        border: 0.5vh solid rgba(200,137,230,.637);
+        border-radius: 1.5vh;
+        box-shadow: 0.5vh 0.5vh 1vh 0.75vh rgb(89 4 168 / 14%);
     }
 
     .about-me .contribution-graph {
@@ -1265,12 +1277,37 @@ button:active,
         font-size: 3.5vh;
     }
 
+    .about-me .less-or-more-container .nodes-container {
+        margin: 0 3vh;
+    }
+
     .about-me .less-or-more-container .nodes-container .node {
         border-radius: 1vh;
+    }
+
+    .about-me .icons-container {
+        position: relative;
+        top: 1%;
     }
 
     .about-me .icons-container .icon-circle {
         height: 12.5vh;
         width: 12.5vh;
+    }
+
+    .cv-section {
+        height: 150vh;
+        font-size: 4vh;
+        padding-top: 10vh;
+    }
+    
+    .cv-section .download-button {
+        width: 50%;
+        cursor: pointer;
+        border-radius: 1vh;
+    }
+
+    .cv-section img {
+        height: 75%;
     }
 }
