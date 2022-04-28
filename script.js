@@ -175,3 +175,20 @@ window.addEventListener('load', () => {
         barUnderMenuOptions[3].style.width = '90%';
     } 
 })
+
+// This makes source code button move up slightly on hover
+
+const sourceCodeButton = document.querySelector('.source-icon-container')
+sourceCodeButton.style.bottom = '0';
+
+sourceCodeButton.addEventListener('mouseover', () => {
+    sourceCodeButton.style.transition = 'all 0.2s ease-in-out';
+    sourceCodeButton.style.position = 'relative';
+    sourceCodeButton.style.bottom = '2%'
+})
+
+sourceCodeButton.addEventListener('mouseout', () => {
+    sourceCodeButton.style.transition = 'all 0.1s ease-in-out';
+    sourceCodeButton.style.position = 'relative';
+    sourceCodeButton.style.bottom = '0'
+})
