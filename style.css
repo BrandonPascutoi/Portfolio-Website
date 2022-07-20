@@ -220,7 +220,7 @@ button:active,
 
 .introduction-contents .landscape-content-container span:not(.different-color) {
     display: flex;
-    height: 30%;
+    height: 20%;
     width: 72.5%;
     align-items: center;
 }
@@ -228,11 +228,6 @@ button:active,
 .introduction-contents .landscape-content-container span p:first-child {
     display: flex;
     align-items: center;
-}
-
-.introduction-contents .landscape-content-container span p:last-child {
-    position: relative;
-    left: 10px;
 }
 
 .introduction-contents .landscape-content-container span p {
@@ -253,7 +248,7 @@ button:active,
 
 .introduction-contents .landscape-content-container .tagline-container {
     width: 72.5%;
-    height: 4%;
+    height: 7.5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -526,6 +521,7 @@ button:active,
     align-items: center;
     width: 100%;
     font-size: 2rem;
+    font-weight: 500;
 }
 
 .different-color {
