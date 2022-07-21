@@ -438,6 +438,41 @@ button:active,
     justify-content: space-between;
 }
 
+.projects {
+    position: relative;
+    top: 3.8rem;
+    height: 90rem;
+    width: 100%;
+    background: linear-gradient(to bottom left,hsla(0,3%,6%,.582),rgba(12,8,24,.904));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 8;
+}
+
+.projects .projects-introduction {
+    width: 80%;
+    height: fit-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects .projects-introduction h1 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.projects .projects-introduction p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
 .cv-section {
     position: relative;
     top: 3.8rem;
