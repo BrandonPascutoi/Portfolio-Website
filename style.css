@@ -853,6 +853,18 @@ button:active,
         width: 30%;
     }
 
+    .projects .project-card img {
+        height: 40%;
+    }
+
+    .projects .project-card span {
+        height: 30%;
+    }
+
+    .projects .project-card span header {
+        line-height: 1vh;
+    }
+
     .cv-section {
         height: 50rem;
         top: 0rem;
