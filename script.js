@@ -170,6 +170,9 @@ window.addEventListener('load', () => {
     } else if (page == 'about.html') {
         barUnderMenuOptions[1].style.transition = 'all 0.2s ease-in-out';
         barUnderMenuOptions[1].style.width = '90%';
+    } else if (page == 'projects.html') {
+        barUnderMenuOptions[2].style.transition = 'all 0.2s ease-in-out';
+        barUnderMenuOptions[2].style.width = '90%';
     } else if (page == 'cv.html') {
         barUnderMenuOptions[3].style.transition = 'all 0.2s ease-in-out';
         barUnderMenuOptions[3].style.width = '90%';
