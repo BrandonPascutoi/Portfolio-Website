@@ -1248,6 +1248,24 @@ button:active,
         bottom: 5%;
         height: 1.8rem;
     }
+
+    .projects .project-card img {
+        height: 50%;
+    }
+
+    .projects .project-card span {
+        height: 25%;
+    }
+
+    .projects .project-card span header {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        height: auto;
+    }
+    
+    .projects .project-card .button-container {
+        width: 75%;
+    }
 }
 
 @media only screen
