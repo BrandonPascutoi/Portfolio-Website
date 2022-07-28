@@ -885,7 +885,7 @@ button:active,
 
 @media only screen 
     and (min-device-width: 390px) 
-    and (min-device-height: 844px)
+    and (min-device-height: 348.76vh)
     and (orientation: portrait) { 
     
     .introduction .introduction-contents h2 p:nth-child(2) {
@@ -899,7 +899,7 @@ button:active,
 }
 
 @media only screen 
-    and (min-device-width: 844px) 
+    and (min-device-width: 348.76vh) 
     and (min-device-height: 390px)
     and (orientation: landscape) {
 
@@ -1278,7 +1278,7 @@ button:active,
 }
 
 @media only screen
-    and (min-device-width: 1180px)
+    and (min-device-width: 487.60vh)
     and (min-device-height : 820px)
     and (orientation: landscape) {
 
@@ -1290,6 +1290,10 @@ button:active,
 @media screen 
     and (min-device-width: 1200px) {
 
+    .gradient-overlay {
+        height: 225%;
+    }
+    
     .landscape-navBar {
         height: 12.5vh;
     }
