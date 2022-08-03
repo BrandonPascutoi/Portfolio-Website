@@ -570,10 +570,10 @@ button:active,
 @media only screen 
     and (orientation: portrait) {
 
-        .landscape-navBar {
-            display: none;
-        }
+    .landscape-navBar {
+        display: none;
     }
+}
 
 @media only screen
     and (orientation: landscape) {
